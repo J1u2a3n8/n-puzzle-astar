@@ -1,6 +1,6 @@
 # n-puzzle-astar
 
-> N-Puzzle con algoritmo A*
+> N-Puzzle Solver with A* Search
 
 ![Language](https://img.shields.io/github/languages/top/J1u2a3n8/n-puzzle-astar)
 ![License](https://img.shields.io/github/license/J1u2a3n8/n-puzzle-astar)
@@ -8,24 +8,24 @@
 ![Stars](https://img.shields.io/github/stars/J1u2a3n8/n-puzzle-astar?style=social)
 ![Issues](https://img.shields.io/github/issues/J1u2a3n8/n-puzzle-astar)
 
-## 📋 Descripción
+## Description
 
-Proyecto ML/Data Science con implementación desde cero de algoritmos. Migrado, historial reescrito, documentado para portfolio.
+Optimal N-Puzzle (8-puzzle, 15-puzzle) solver using A* search with Manhattan distance and linear conflict heuristics. Includes visualization of search process and performance comparison with other algorithms.
 
-## 🏗️ Arquitectura
+## Architecture
 
-Notebook-based: Exploratory -> Preprocessing -> Modeling -> Evaluation
+Search: Priority Queue (Open Set) → Heuristic (Manhattan + Linear Conflict) → Goal Test → Path Reconstruction
 
-## 🚀 Inicio Rápido
+## Quick Start
 
-### Prerrequisitos
+### Prerequisites
 
 Python 3.10+, pip/poetry, Jupyter Lab
 
-### Instalación
+### Installation
 
 ```bash
-# Clonar
+# Clone
 git clone https://github.com/J1u2a3n8/n-puzzle-astar.git
 cd n-puzzle-astar
 
@@ -33,41 +33,41 @@ pip install -r requirements.txt
 # jupyter lab
 ```
 
-### Uso
+### Usage
 
 ```bash
-jupyter notebook notebooks/main.ipynb
+jupyter notebook notebooks/n-puzzle-astar.ipynb
 ```
 
-## 🧪 Tests
+## Testing
 
 ```bash
 pytest tests/
 ```
 
-## 📁 Estructura del Proyecto
+## Project Structure
 
 ```
 n-puzzle-astar/
-├── src/              # Código fuente principal
-├── tests/            # Tests unitarios/integración
-├── docs/             # Documentación
-├── .github/          # Workflows CI/CD
+├── src/              # Main source code
+├── tests/            # Unit/integration tests
+├── docs/             # Documentation
+├── .github/          # CI/CD workflows
 └── README.md
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-**Python**, NumPy, Pandas, Scikit-learn, Jupyter
+Python, NumPy, heapq, Matplotlib, Jupyter
 
-## 📄 Licencia
+## License
 
-Este proyecto está bajo licencia **MIT** - ver [LICENSE](LICENSE) para detalles.
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 
-## 👤 Autor
+## Author
 
 **J1u2a3n8** - [GitHub](https://github.com/J1u2a3n8) - [LinkedIn](https://linkedin.com/in/juanluiscanedo)
 
 ---
 
-⭐ Si este proyecto te fue útil, ¡dale una estrella!
+⭐ If you found this project useful, give it a star!
